@@ -68,7 +68,7 @@ function Pomodoro() {
         timeData.focusRemaining = timeData.currentRemaining
         timeData.remainingAriaValue = 1 - timeData.currentRemaining / timeData.focusDuration
         if (timeData.focusRemaining === 0) {
-          new Audio(`${process.env.PUBLIC_URL}/alarm/submarine-dive-horn.mp3`).play()
+          new Audio(`${process.env.PUBLIC_URL}/alarm/Censored_Beep-Mastercard-569981218.mp3`).play()
           timeData.currentRemaining = timeData.breakRemaining
           timeData.remainingAriaValue = 0
         }
@@ -80,7 +80,7 @@ function Pomodoro() {
         timeData.currentRemaining = timeData.currentRemaining - 1        
         timeData.remainingAriaValue = 1 - timeData.currentRemaining / timeData.breakDuration
         if (timeData.breakRemaining === 0) {
-          new Audio(`${process.env.PUBLIC_URL}/alarm/submarine-dive-horn.mp3`).play()
+          new Audio(`${process.env.PUBLIC_URL}/alarm/Censored_Beep-Mastercard-569981218.mp3`).play()
           timeData.focusRemaining = timeData.focusDuration
           timeData.breakRemaining = timeData.breakDuration
           timeData.currentRemaining = timeData.focusDuration
