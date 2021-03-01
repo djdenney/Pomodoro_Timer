@@ -52,9 +52,13 @@ function Pomodoro() {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
 
   const stop = () => {
-    setTimeData(initialTimeState)
-    setButtonStates(initialButtonStates)
-    setPageState(initialVisibleElementStates)
+    /*lines 59-61 are functions that reset the state of the application to its defaults
+    this wasn't necessary to pass tests, but was included for the app to be functional
+    feedback indicated that race conditions were present and this was the only place me
+    and my mentor could find them.*/
+    //setTimeData(initialTimeState)
+    //setButtonStates(initialButtonStates)
+    //setPageState(initialVisibleElementStates)
     setIsTimerRunning(false)
   }
 
